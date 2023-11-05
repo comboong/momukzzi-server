@@ -14,7 +14,8 @@ import { ShopModule } from './shop/shop.module';
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      synchronize: false,
+      entities: [__dirname + '/**/entities/*.entity.{js,ts}'],
+      synchronize: true,
     }),
     MainModule,
     ShopModule
