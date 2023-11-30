@@ -11,6 +11,6 @@ export class ShopService {
   ) {}
 
   async findOne(id: number): Promise<Shop> {
-    return await this.shopRepository.findOne({where: {id}});
+    return;
   }
 }
