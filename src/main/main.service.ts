@@ -61,8 +61,8 @@ export class MainService {
           road_address_name: shop.road_address_name,
           phone: shop.phone,
           place_url: shop.place_url,
-          menu_list: shop.menuList,
-          menu_img: shop.menuImg
+          menu_list: shop.menuInfo,
+          menu_img: shop.menuImgUrl
         });
         result.push(created_shop);
       }
